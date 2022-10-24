@@ -1,0 +1,263 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AbsoluteAddress	AbsoluteAddress.java	/^    public AbsoluteAddress(Register reg) {$/;"	m	class:AbsoluteAddress
+AbsoluteAddress	AbsoluteAddress.java	/^public class AbsoluteAddress extends Operand {$/;"	c
+Assembly	Assembly.java	/^abstract public class Assembly {$/;"	c
+BaseSymbol	BaseSymbol.java	/^abstract public class BaseSymbol implements Symbol {$/;"	c
+Comment	Comment.java	/^    public Comment(String string) {$/;"	m	class:Comment
+Comment	Comment.java	/^    public Comment(String string, int indentLevel) {$/;"	m	class:Comment
+Comment	Comment.java	/^public class Comment extends Assembly {$/;"	c
+DUMMY_SYMBOL_BASE	SymbolTable.java	/^    static private final String DUMMY_SYMBOL_BASE = "L";$/;"	f	class:SymbolTable	file:
+DirectMemoryReference	DirectMemoryReference.java	/^    public DirectMemoryReference(Literal val) {$/;"	m	class:DirectMemoryReference
+DirectMemoryReference	DirectMemoryReference.java	/^public class DirectMemoryReference extends MemoryReference {$/;"	c
+Directive	Directive.java	/^    public Directive(String content) {$/;"	m	class:Directive
+Directive	Directive.java	/^public class Directive extends Assembly {$/;"	c
+INT16	Type.java	/^    INT8, INT16, INT32, INT64;$/;"	e	enum:Type	file:
+INT32	Type.java	/^    INT8, INT16, INT32, INT64;$/;"	e	enum:Type	file:
+INT64	Type.java	/^    INT8, INT16, INT32, INT64;$/;"	e	enum:Type	file:
+INT8	Type.java	/^    INT8, INT16, INT32, INT64;$/;"	e	enum:Type	file:
+ImmediateValue	ImmediateValue.java	/^    public ImmediateValue(Literal expr) {$/;"	m	class:ImmediateValue
+ImmediateValue	ImmediateValue.java	/^    public ImmediateValue(long n) {$/;"	m	class:ImmediateValue
+ImmediateValue	ImmediateValue.java	/^public class ImmediateValue extends Operand {$/;"	c
+IndirectMemoryReference	IndirectMemoryReference.java	/^    private IndirectMemoryReference($/;"	m	class:IndirectMemoryReference	file:
+IndirectMemoryReference	IndirectMemoryReference.java	/^    public IndirectMemoryReference(Symbol offset, Register base) {$/;"	m	class:IndirectMemoryReference
+IndirectMemoryReference	IndirectMemoryReference.java	/^    public IndirectMemoryReference(long offset, Register base) {$/;"	m	class:IndirectMemoryReference
+IndirectMemoryReference	IndirectMemoryReference.java	/^public class IndirectMemoryReference extends MemoryReference {$/;"	c
+Instruction	Instruction.java	/^    public Instruction(String mnemonic) {$/;"	m	class:Instruction
+Instruction	Instruction.java	/^    public Instruction(String mnemonic, String suffix, Operand a1) {$/;"	m	class:Instruction
+Instruction	Instruction.java	/^    public Instruction(String mnemonic, String suffix, Operand[] operands, boolean reloc) {$/;"	m	class:Instruction
+Instruction	Instruction.java	/^    public Instruction(String mnemonic, String suffix,$/;"	m	class:Instruction
+Instruction	Instruction.java	/^public class Instruction extends Assembly {$/;"	c
+IntegerLiteral	IntegerLiteral.java	/^    public IntegerLiteral(long n) {$/;"	m	class:IntegerLiteral
+IntegerLiteral	IntegerLiteral.java	/^public class IntegerLiteral implements Literal {$/;"	c
+Label	Label.java	/^    public Label() {$/;"	m	class:Label
+Label	Label.java	/^    public Label(Symbol sym) {$/;"	m	class:Label
+Label	Label.java	/^public class Label extends Assembly {$/;"	c
+Literal	Literal.java	/^public interface Literal extends Comparable<Literal> {$/;"	i
+MemoryReference	MemoryReference.java	/^abstract public class MemoryReference$/;"	c
+NamedSymbol	NamedSymbol.java	/^    public NamedSymbol(String name) {$/;"	m	class:NamedSymbol
+NamedSymbol	NamedSymbol.java	/^public class NamedSymbol extends BaseSymbol {$/;"	c
+Operand	Operand.java	/^abstract public class Operand implements OperandPattern {$/;"	c
+OperandPattern	OperandPattern.java	/^public interface OperandPattern {$/;"	i
+Register	Register.java	/^abstract public class Register extends Operand {$/;"	c
+Statistics	Statistics.java	/^    public Statistics() {$/;"	m	class:Statistics
+Statistics	Statistics.java	/^public class Statistics {$/;"	c
+SuffixedSymbol	SuffixedSymbol.java	/^    public SuffixedSymbol(Symbol base, String suffix) {$/;"	m	class:SuffixedSymbol
+SuffixedSymbol	SuffixedSymbol.java	/^public class SuffixedSymbol implements Symbol {$/;"	c
+Symbol	Symbol.java	/^public interface Symbol extends Literal {$/;"	i
+SymbolTable	SymbolTable.java	/^    public SymbolTable(String base) {$/;"	m	class:SymbolTable
+SymbolTable	SymbolTable.java	/^public class SymbolTable {$/;"	c
+Type	Type.java	/^public enum Type {$/;"	g
+UnnamedSymbol	UnnamedSymbol.java	/^    public UnnamedSymbol() {$/;"	m	class:UnnamedSymbol
+UnnamedSymbol	UnnamedSymbol.java	/^public class UnnamedSymbol extends BaseSymbol {$/;"	c
+base	IndirectMemoryReference.java	/^    Register base;$/;"	f	class:IndirectMemoryReference
+base	IndirectMemoryReference.java	/^    public Register base() {$/;"	m	class:IndirectMemoryReference
+base	SuffixedSymbol.java	/^    protected Symbol base;$/;"	f	class:SuffixedSymbol
+base	SymbolTable.java	/^    protected String base;$/;"	f	class:SymbolTable
+build	Instruction.java	/^    public Instruction build(String mnemonic, Operand o1) {$/;"	m	class:Instruction
+build	Instruction.java	/^    public Instruction build(String mnemonic, Operand o1, Operand o2) {$/;"	m	class:Instruction
+cmp	DirectMemoryReference.java	/^    protected int cmp(DirectMemoryReference mem) {$/;"	m	class:DirectMemoryReference
+cmp	DirectMemoryReference.java	/^    protected int cmp(IndirectMemoryReference mem) {$/;"	m	class:DirectMemoryReference
+cmp	IndirectMemoryReference.java	/^    protected int cmp(DirectMemoryReference mem) {$/;"	m	class:IndirectMemoryReference
+cmp	IndirectMemoryReference.java	/^    protected int cmp(IndirectMemoryReference mem) {$/;"	m	class:IndirectMemoryReference
+cmp	IntegerLiteral.java	/^    public int cmp(IntegerLiteral i) {$/;"	m	class:IntegerLiteral
+cmp	IntegerLiteral.java	/^    public int cmp(NamedSymbol sym) {$/;"	m	class:IntegerLiteral
+cmp	IntegerLiteral.java	/^    public int cmp(SuffixedSymbol sym) {$/;"	m	class:IntegerLiteral
+cmp	IntegerLiteral.java	/^    public int cmp(UnnamedSymbol sym) {$/;"	m	class:IntegerLiteral
+cmp	Literal.java	/^    public int cmp(IntegerLiteral i);$/;"	m	interface:Literal
+cmp	Literal.java	/^    public int cmp(NamedSymbol sym);$/;"	m	interface:Literal
+cmp	Literal.java	/^    public int cmp(SuffixedSymbol sym);$/;"	m	interface:Literal
+cmp	Literal.java	/^    public int cmp(UnnamedSymbol sym);$/;"	m	interface:Literal
+cmp	MemoryReference.java	/^    abstract protected int cmp(DirectMemoryReference mem);$/;"	m	class:MemoryReference
+cmp	MemoryReference.java	/^    abstract protected int cmp(IndirectMemoryReference mem);$/;"	m	class:MemoryReference
+cmp	NamedSymbol.java	/^    public int cmp(IntegerLiteral i) {$/;"	m	class:NamedSymbol
+cmp	NamedSymbol.java	/^    public int cmp(NamedSymbol sym) {$/;"	m	class:NamedSymbol
+cmp	NamedSymbol.java	/^    public int cmp(SuffixedSymbol sym) {$/;"	m	class:NamedSymbol
+cmp	NamedSymbol.java	/^    public int cmp(UnnamedSymbol sym) {$/;"	m	class:NamedSymbol
+cmp	SuffixedSymbol.java	/^    public int cmp(IntegerLiteral i) {$/;"	m	class:SuffixedSymbol
+cmp	SuffixedSymbol.java	/^    public int cmp(NamedSymbol sym) {$/;"	m	class:SuffixedSymbol
+cmp	SuffixedSymbol.java	/^    public int cmp(SuffixedSymbol sym) {$/;"	m	class:SuffixedSymbol
+cmp	SuffixedSymbol.java	/^    public int cmp(UnnamedSymbol sym) {$/;"	m	class:SuffixedSymbol
+cmp	UnnamedSymbol.java	/^    public int cmp(IntegerLiteral i) {$/;"	m	class:UnnamedSymbol
+cmp	UnnamedSymbol.java	/^    public int cmp(NamedSymbol sym) {$/;"	m	class:UnnamedSymbol
+cmp	UnnamedSymbol.java	/^    public int cmp(SuffixedSymbol sym) {$/;"	m	class:UnnamedSymbol
+cmp	UnnamedSymbol.java	/^    public int cmp(UnnamedSymbol sym) {$/;"	m	class:UnnamedSymbol
+collect	Statistics.java	/^    static public Statistics collect(List<Assembly> assemblies) {$/;"	m	class:Statistics
+collectStatistics	AbsoluteAddress.java	/^    public void collectStatistics(Statistics stats) {$/;"	m	class:AbsoluteAddress
+collectStatistics	Assembly.java	/^    public void collectStatistics(Statistics stats) {$/;"	m	class:Assembly
+collectStatistics	BaseSymbol.java	/^    public void collectStatistics(Statistics stats) {$/;"	m	class:BaseSymbol
+collectStatistics	DirectMemoryReference.java	/^    public void collectStatistics(Statistics stats) {$/;"	m	class:DirectMemoryReference
+collectStatistics	ImmediateValue.java	/^    public void collectStatistics(Statistics stats) {$/;"	m	class:ImmediateValue
+collectStatistics	IndirectMemoryReference.java	/^    public void collectStatistics(Statistics stats) {$/;"	m	class:IndirectMemoryReference
+collectStatistics	Instruction.java	/^    public void collectStatistics(Statistics stats) {$/;"	m	class:Instruction
+collectStatistics	IntegerLiteral.java	/^    public void collectStatistics(Statistics stats) {$/;"	m	class:IntegerLiteral
+collectStatistics	Literal.java	/^    public void collectStatistics(Statistics stats);$/;"	m	interface:Literal
+collectStatistics	Operand.java	/^    abstract public void collectStatistics(Statistics stats);$/;"	m	class:Operand
+collectStatistics	Register.java	/^    public void collectStatistics(Statistics stats) {$/;"	m	class:Register
+collectStatistics	SuffixedSymbol.java	/^    public void collectStatistics(Statistics stats) {$/;"	m	class:SuffixedSymbol
+compareTo	DirectMemoryReference.java	/^    public int compareTo(MemoryReference mem) {$/;"	m	class:DirectMemoryReference
+compareTo	IndirectMemoryReference.java	/^    public int compareTo(MemoryReference mem) {$/;"	m	class:IndirectMemoryReference
+compareTo	IntegerLiteral.java	/^    public int compareTo(Literal lit) {$/;"	m	class:IntegerLiteral
+compareTo	NamedSymbol.java	/^    public int compareTo(Literal lit) {$/;"	m	class:NamedSymbol
+compareTo	SuffixedSymbol.java	/^    public int compareTo(Literal lit) {$/;"	m	class:SuffixedSymbol
+compareTo	UnnamedSymbol.java	/^    public int compareTo(Literal lit) {$/;"	m	class:UnnamedSymbol
+content	Directive.java	/^    protected String content;$/;"	f	class:Directive
+doesRegisterUsed	Statistics.java	/^    public boolean doesRegisterUsed(Register reg) {$/;"	m	class:Statistics
+doesSymbolUsed	Statistics.java	/^    public boolean doesSymbolUsed(Label label) {$/;"	m	class:Statistics
+doesSymbolUsed	Statistics.java	/^    public boolean doesSymbolUsed(Symbol sym) {$/;"	m	class:Statistics
+dummy	SymbolTable.java	/^    static private final SymbolTable dummy = new SymbolTable(DUMMY_SYMBOL_BASE);$/;"	f	class:SymbolTable	file:
+dummy	SymbolTable.java	/^    static public SymbolTable dummy() {$/;"	m	class:SymbolTable
+dump	AbsoluteAddress.java	/^    public String dump() {$/;"	m	class:AbsoluteAddress
+dump	Assembly.java	/^    abstract public String dump();$/;"	m	class:Assembly
+dump	Comment.java	/^    public String dump() {$/;"	m	class:Comment
+dump	DirectMemoryReference.java	/^    public String dump() {$/;"	m	class:DirectMemoryReference
+dump	Directive.java	/^    public String dump() {$/;"	m	class:Directive
+dump	ImmediateValue.java	/^    public String dump() {$/;"	m	class:ImmediateValue
+dump	IndirectMemoryReference.java	/^    public String dump() {$/;"	m	class:IndirectMemoryReference
+dump	Instruction.java	/^    public String dump() {$/;"	m	class:Instruction
+dump	IntegerLiteral.java	/^    public String dump() {$/;"	m	class:IntegerLiteral
+dump	Label.java	/^    public String dump() {$/;"	m	class:Label
+dump	Literal.java	/^    public String dump();$/;"	m	interface:Literal
+dump	NamedSymbol.java	/^    public String dump() {$/;"	m	class:NamedSymbol
+dump	Operand.java	/^    abstract public String dump();$/;"	m	class:Operand
+dump	Register.java	/^    abstract public String dump();$/;"	m	class:Register
+dump	SuffixedSymbol.java	/^    public String dump() {$/;"	m	class:SuffixedSymbol
+dump	Symbol.java	/^    public String dump();$/;"	m	interface:Symbol
+dump	UnnamedSymbol.java	/^    public String dump() {$/;"	m	class:UnnamedSymbol
+equals	ImmediateValue.java	/^    public boolean equals(Object other) {$/;"	m	class:ImmediateValue
+equals	IntegerLiteral.java	/^    public boolean equals(IntegerLiteral other) {$/;"	m	class:IntegerLiteral
+equals	IntegerLiteral.java	/^    public boolean equals(Object other) {$/;"	m	class:IntegerLiteral
+expr	ImmediateValue.java	/^    protected Literal expr;$/;"	f	class:ImmediateValue
+expr	ImmediateValue.java	/^    public Literal expr() {$/;"	m	class:ImmediateValue
+fetchCount	Statistics.java	/^    protected <K> int fetchCount(Map<K, Integer> m, K key) {$/;"	m	class:Statistics
+fixOffset	DirectMemoryReference.java	/^    public void fixOffset(long diff) {$/;"	m	class:DirectMemoryReference
+fixOffset	IndirectMemoryReference.java	/^    public void fixOffset(long diff) {$/;"	m	class:IndirectMemoryReference
+fixOffset	MemoryReference.java	/^    abstract public void fixOffset(long diff);$/;"	m	class:MemoryReference
+fixed	IndirectMemoryReference.java	/^    boolean fixed;$/;"	f	class:IndirectMemoryReference
+get	Type.java	/^    static public Type get(long size) {$/;"	m	class:Type
+incrementCount	Statistics.java	/^    protected <K> void incrementCount(Map<K, Integer> m, K key) {$/;"	m	class:Statistics
+indent	Comment.java	/^    protected String indent() {$/;"	m	class:Comment
+indentLevel	Comment.java	/^    protected int indentLevel;$/;"	f	class:Comment
+insnUsage	Statistics.java	/^    protected Map<String, Integer> insnUsage;$/;"	f	class:Statistics
+instructionUsed	Statistics.java	/^    public void instructionUsed(String insn) {$/;"	m	class:Statistics
+integerLiteral	IntegerLiteral.java	/^    public IntegerLiteral integerLiteral() {$/;"	m	class:IntegerLiteral
+integerLiteral	Operand.java	/^    public IntegerLiteral integerLiteral() {$/;"	m	class:Operand
+isComment	Assembly.java	/^    public boolean isComment() {$/;"	m	class:Assembly
+isComment	Comment.java	/^    public boolean isComment() {$/;"	m	class:Comment
+isDirective	Assembly.java	/^    public boolean isDirective() {$/;"	m	class:Assembly
+isDirective	Directive.java	/^    public boolean isDirective() {$/;"	m	class:Directive
+isInstruction	Assembly.java	/^    public boolean isInstruction() {$/;"	m	class:Assembly
+isInstruction	Instruction.java	/^    public boolean isInstruction() {$/;"	m	class:Instruction
+isJumpInstruction	Instruction.java	/^    public boolean isJumpInstruction() {$/;"	m	class:Instruction
+isLabel	Assembly.java	/^    public boolean isLabel() {$/;"	m	class:Assembly
+isLabel	Label.java	/^    public boolean isLabel() {$/;"	m	class:Label
+isMemoryReference	MemoryReference.java	/^    public boolean isMemoryReference() {$/;"	m	class:MemoryReference
+isMemoryReference	Operand.java	/^    public boolean isMemoryReference() {$/;"	m	class:Operand
+isRegister	Operand.java	/^    public boolean isRegister() {$/;"	m	class:Operand
+isRegister	Register.java	/^    public boolean isRegister() {$/;"	m	class:Register
+isZero	BaseSymbol.java	/^    public boolean isZero() {$/;"	m	class:BaseSymbol
+isZero	IntegerLiteral.java	/^    public boolean isZero() {$/;"	m	class:IntegerLiteral
+isZero	Literal.java	/^    public boolean isZero();$/;"	m	interface:Literal
+isZero	SuffixedSymbol.java	/^    public boolean isZero() {$/;"	m	class:SuffixedSymbol
+jmpDestination	Instruction.java	/^    public Symbol jmpDestination() {$/;"	m	class:Instruction
+map	SymbolTable.java	/^    protected Map<UnnamedSymbol, String> map;$/;"	f	class:SymbolTable
+match	Operand.java	/^    public boolean match(Operand operand) {$/;"	m	class:Operand
+match	OperandPattern.java	/^    public boolean match(Operand operand);$/;"	m	interface:OperandPattern
+mnemonic	Instruction.java	/^    protected String mnemonic;$/;"	f	class:Instruction
+mnemonic	Instruction.java	/^    public String mnemonic() {$/;"	m	class:Instruction
+name	NamedSymbol.java	/^    protected String name;$/;"	f	class:NamedSymbol
+name	NamedSymbol.java	/^    public String name() {$/;"	m	class:NamedSymbol
+name	SuffixedSymbol.java	/^    public String name() {$/;"	m	class:SuffixedSymbol
+name	Symbol.java	/^    public String name();$/;"	m	interface:Symbol
+name	UnnamedSymbol.java	/^    public String name() {$/;"	m	class:UnnamedSymbol
+needRelocation	Instruction.java	/^    protected boolean needRelocation;$/;"	f	class:Instruction
+net.loveruby.cflat.asm	AbsoluteAddress.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	Assembly.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	BaseSymbol.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	Comment.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	DirectMemoryReference.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	Directive.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	ImmediateValue.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	IndirectMemoryReference.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	Instruction.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	IntegerLiteral.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	Label.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	Literal.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	MemoryReference.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	NamedSymbol.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	Operand.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	OperandPattern.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	Register.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	Statistics.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	SuffixedSymbol.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	Symbol.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	SymbolTable.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	Type.java	/^package net.loveruby.cflat.asm;$/;"	p
+net.loveruby.cflat.asm	UnnamedSymbol.java	/^package net.loveruby.cflat.asm;$/;"	p
+newString	SymbolTable.java	/^    protected String newString() {$/;"	m	class:SymbolTable
+newSymbol	SymbolTable.java	/^    public Symbol newSymbol() {$/;"	m	class:SymbolTable
+numInstructionUsage	Statistics.java	/^    public int numInstructionUsage(String insn) {$/;"	m	class:Statistics
+numOperands	Instruction.java	/^    public int numOperands() {$/;"	m	class:Instruction
+numRegisterUsed	Statistics.java	/^    public int numRegisterUsed(Register reg) {$/;"	m	class:Statistics
+numSymbolUsed	Statistics.java	/^    public int numSymbolUsed(Symbol sym) {$/;"	m	class:Statistics
+offset	IndirectMemoryReference.java	/^    Literal offset;$/;"	f	class:IndirectMemoryReference
+offset	IndirectMemoryReference.java	/^    public Literal offset() {$/;"	m	class:IndirectMemoryReference
+operand1	Instruction.java	/^    public Operand operand1() {$/;"	m	class:Instruction
+operand2	Instruction.java	/^    public Operand operand2() {$/;"	m	class:Instruction
+operands	Instruction.java	/^    protected Operand[] operands;$/;"	f	class:Instruction
+plus	BaseSymbol.java	/^    public Literal plus(long n) {$/;"	m	class:BaseSymbol
+plus	IntegerLiteral.java	/^    public IntegerLiteral plus(long diff) {$/;"	m	class:IntegerLiteral
+plus	Literal.java	/^    public Literal plus(long diff);$/;"	m	interface:Literal
+plus	SuffixedSymbol.java	/^    public Literal plus(long n) {$/;"	m	class:SuffixedSymbol
+register	AbsoluteAddress.java	/^    protected Register register;$/;"	f	class:AbsoluteAddress
+register	AbsoluteAddress.java	/^    public Operand register() {$/;"	m	class:AbsoluteAddress
+registerUsage	Statistics.java	/^    protected Map<Register, Integer> registerUsage;$/;"	f	class:Statistics
+registerUsed	Statistics.java	/^    public void registerUsed(Register reg) {$/;"	m	class:Statistics
+relocatable	IndirectMemoryReference.java	/^    static public IndirectMemoryReference relocatable(long offset, Register base) {$/;"	m	class:IndirectMemoryReference
+seq	SymbolTable.java	/^    protected long seq = 0;$/;"	f	class:SymbolTable
+size	Type.java	/^    public int size() {$/;"	m	class:Type
+string	Comment.java	/^    protected String string;$/;"	f	class:Comment
+suffix	Instruction.java	/^    protected String suffix;$/;"	f	class:Instruction
+suffix	SuffixedSymbol.java	/^    protected String suffix;$/;"	f	class:SuffixedSymbol
+symbol	Label.java	/^    protected Symbol symbol;$/;"	f	class:Label
+symbol	Label.java	/^    public Symbol symbol() {$/;"	m	class:Label
+symbolString	SymbolTable.java	/^    public String symbolString(UnnamedSymbol sym) {$/;"	m	class:SymbolTable
+symbolUsage	Statistics.java	/^    protected Map<Symbol, Integer> symbolUsage;$/;"	f	class:Statistics
+symbolUsed	Statistics.java	/^    public void symbolUsed(Symbol sym) {$/;"	m	class:Statistics
+toSource	AbsoluteAddress.java	/^    public String toSource(SymbolTable table) {$/;"	m	class:AbsoluteAddress
+toSource	Assembly.java	/^    abstract public String toSource(SymbolTable table);$/;"	m	class:Assembly
+toSource	Comment.java	/^    public String toSource(SymbolTable table) {$/;"	m	class:Comment
+toSource	DirectMemoryReference.java	/^    public String toSource(SymbolTable table) {$/;"	m	class:DirectMemoryReference
+toSource	Directive.java	/^    public String toSource(SymbolTable table) {$/;"	m	class:Directive
+toSource	ImmediateValue.java	/^    public String toSource(SymbolTable table) {$/;"	m	class:ImmediateValue
+toSource	IndirectMemoryReference.java	/^    public String toSource(SymbolTable table) {$/;"	m	class:IndirectMemoryReference
+toSource	Instruction.java	/^    public String toSource(SymbolTable table) {$/;"	m	class:Instruction
+toSource	IntegerLiteral.java	/^    public String toSource() {$/;"	m	class:IntegerLiteral
+toSource	IntegerLiteral.java	/^    public String toSource(SymbolTable table) {$/;"	m	class:IntegerLiteral
+toSource	Label.java	/^    public String toSource(SymbolTable table) {$/;"	m	class:Label
+toSource	Literal.java	/^    public String toSource();$/;"	m	interface:Literal
+toSource	Literal.java	/^    public String toSource(SymbolTable table);$/;"	m	interface:Literal
+toSource	NamedSymbol.java	/^    public String toSource() {$/;"	m	class:NamedSymbol
+toSource	NamedSymbol.java	/^    public String toSource(SymbolTable table) {$/;"	m	class:NamedSymbol
+toSource	Operand.java	/^    abstract public String toSource(SymbolTable table);$/;"	m	class:Operand
+toSource	Register.java	/^    abstract public String toSource(SymbolTable syms);$/;"	m	class:Register
+toSource	SuffixedSymbol.java	/^    public String toSource() {$/;"	m	class:SuffixedSymbol
+toSource	SuffixedSymbol.java	/^    public String toSource(SymbolTable table) {$/;"	m	class:SuffixedSymbol
+toSource	UnnamedSymbol.java	/^    public String toSource() {$/;"	m	class:UnnamedSymbol
+toSource	UnnamedSymbol.java	/^    public String toSource(SymbolTable table) {$/;"	m	class:UnnamedSymbol
+toString	DirectMemoryReference.java	/^    public String toString() {$/;"	m	class:DirectMemoryReference
+toString	IndirectMemoryReference.java	/^    public String toString() {$/;"	m	class:IndirectMemoryReference
+toString	Instruction.java	/^    public String toString() {$/;"	m	class:Instruction
+toString	IntegerLiteral.java	/^    public String toString() {$/;"	m	class:IntegerLiteral
+toString	NamedSymbol.java	/^    public String toString() {$/;"	m	class:NamedSymbol
+toString	SuffixedSymbol.java	/^    public String toString() {$/;"	m	class:SuffixedSymbol
+toString	Symbol.java	/^    public String toString();$/;"	m	interface:Symbol
+toString	UnnamedSymbol.java	/^    public String toString() {$/;"	m	class:UnnamedSymbol
+value	DirectMemoryReference.java	/^    protected Literal value;$/;"	f	class:DirectMemoryReference
+value	DirectMemoryReference.java	/^    public Literal value() {$/;"	m	class:DirectMemoryReference
+value	IntegerLiteral.java	/^    protected long value;$/;"	f	class:IntegerLiteral
+value	IntegerLiteral.java	/^    public long value() {$/;"	m	class:IntegerLiteral
