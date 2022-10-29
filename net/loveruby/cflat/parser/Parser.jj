@@ -1,6 +1,6 @@
 // #@@range/options{
 options {
-    STATIC = false;
+    STATIC = false;	// false,生成的class的成员和方法都是非static
     DEBUG_PARSER = true;
     UNICODE_INPUT = true;
     JDK_VERSION = "1.5";
