@@ -2,6 +2,7 @@ package net.loveruby.cflat.ir;
 import net.loveruby.cflat.ast.Location;
 import net.loveruby.cflat.asm.Label;
 
+// 条件跳转，cond ? thenLbel : elseLabel
 public class CJump extends Stmt {
     protected Expr cond;
     protected Label thenLabel;

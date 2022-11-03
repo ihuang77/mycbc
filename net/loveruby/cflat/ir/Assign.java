@@ -1,6 +1,7 @@
 package net.loveruby.cflat.ir;
 import net.loveruby.cflat.ast.Location;
 
+// lhs = rhs
 public class Assign extends Stmt {
     protected Expr lhs, rhs;
 

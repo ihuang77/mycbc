@@ -1,9 +1,10 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
-!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
-!_TAG_PROGRAM_NAME	Exuberant Ctags	//
-!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/61cc66cf/
 ADD	ir/Op.java	/^    ADD,$/;"	e	enum:Op	file:
 ARITH_RSHIFT	ir/Op.java	/^    ARITH_RSHIFT,$/;"	e	enum:Op	file:
 AST	ast/AST.java	/^    public AST(Location source, Declarations declarations) {$/;"	m	class:AST
@@ -906,7 +907,7 @@ currentName	compiler/SourceFile.java	/^    private String currentName;$/;"	f	cla
 currentScope	compiler/LocalResolver.java	/^    private Scope currentScope() {$/;"	m	class:LocalResolver	file:
 cx	sysdep/x86/CodeGenerator.java	/^    private Register cx() { return cx(naturalType); }$/;"	m	class:CodeGenerator	file:
 cx	sysdep/x86/CodeGenerator.java	/^    private Register cx(Type t) {$/;"	m	class:CodeGenerator	file:
-debugParser	compiler/Options.java	/^    private boolean debugParser = false;$/;"	f	class:Options	file:
+debugParser	compiler/Options.java	/^    private boolean debugParser = false;		\/\/ 若为 true，则输出解析器的 debug log$/;"	f	class:Options	file:
 declarations	ast/AST.java	/^    protected Declarations declarations;$/;"	f	class:AST
 declarations	ast/AST.java	/^    public List<Entity> declarations() {$/;"	m	class:AST
 declareEntity	entity/ToplevelScope.java	/^    public void declareEntity(Entity entity) throws SemanticException {$/;"	m	class:ToplevelScope
@@ -1519,7 +1520,7 @@ loadPath	parser/LibraryLoader.java	/^    protected List<String> loadPath;$/;"	f	
 loadVariable	sysdep/x86/CodeGenerator.java	/^    private void loadVariable(Var var, Register dest) {$/;"	m	class:CodeGenerator	file:
 loadedLibraries	parser/LibraryLoader.java	/^    protected Map<String, Declarations> loadedLibraries;$/;"	f	class:LibraryLoader
 loader	compiler/Options.java	/^    LibraryLoader loader() {$/;"	m	class:Options
-loader	compiler/Options.java	/^    private LibraryLoader loader = new LibraryLoader();$/;"	f	class:Options	file:
+loader	compiler/Options.java	/^    private LibraryLoader loader = new LibraryLoader();	\/\/ 管理 import 文件的对象$/;"	f	class:Options	file:
 loadingLibraries	parser/LibraryLoader.java	/^    protected LinkedList<String> loadingLibraries;$/;"	f	class:LibraryLoader
 localGOTSymbol	sysdep/x86/CodeGenerator.java	/^    private Symbol localGOTSymbol(Symbol base) {$/;"	m	class:CodeGenerator	file:
 localVariables	entity/DefinedFunction.java	/^    public List<DefinedVariable> localVariables() {$/;"	m	class:DefinedFunction
@@ -1623,7 +1624,7 @@ minValue	type/IntegerType.java	/^    public long minValue() {$/;"	m	class:Intege
 mnemonic	asm/Instruction.java	/^    protected String mnemonic;$/;"	f	class:Instruction
 mnemonic	asm/Instruction.java	/^    public String mnemonic() {$/;"	m	class:Instruction
 mode	compiler/Options.java	/^    CompilerMode mode() {$/;"	m	class:Options
-mode	compiler/Options.java	/^    private CompilerMode mode;$/;"	f	class:Options	file:
+mode	compiler/Options.java	/^    private CompilerMode mode;                  \/\/ 提示 build 处理在何处停止$/;"	f	class:Options	file:
 modes	compiler/CompilerMode.java	/^    static private Map<String, CompilerMode> modes;$/;"	f	class:CompilerMode	file:
 mov	sysdep/x86/AssemblyCode.java	/^    void mov(Operand src, Register dest) {$/;"	m	class:AssemblyCode
 mov	sysdep/x86/AssemblyCode.java	/^    void mov(Register src, Operand dest) {$/;"	m	class:AssemblyCode
@@ -1924,7 +1925,7 @@ origType	ast/PtrMemberNode.java	/^    protected Type origType() {$/;"	m	class:Pt
 origType	ast/VariableNode.java	/^    protected Type origType() {$/;"	m	class:VariableNode
 originalName	compiler/SourceFile.java	/^    private final String originalName;$/;"	f	class:SourceFile	file:
 outputFileName	compiler/Options.java	/^    String outputFileName() {$/;"	m	class:Options
-outputFileName	compiler/Options.java	/^    private String outputFileName;$/;"	f	class:Options	file:
+outputFileName	compiler/Options.java	/^    private String outputFileName;              \/\/ 输出的文件名$/;"	f	class:Options	file:
 paramDescriptors	entity/ParamSlots.java	/^    protected List<T> paramDescriptors;$/;"	f	class:ParamSlots
 paramTypes	type/FunctionType.java	/^    protected ParamTypes paramTypes;$/;"	f	class:FunctionType
 paramTypes	type/FunctionType.java	/^    public List<Type> paramTypes() {$/;"	m	class:FunctionType
@@ -2394,7 +2395,7 @@ vardecls	ast/Declarations.java	/^    public List<UndefinedVariable> vardecls() {
 variables	ast/BlockNode.java	/^    protected List<DefinedVariable> variables;$/;"	f	class:BlockNode
 variables	ast/BlockNode.java	/^    public List<DefinedVariable> variables() {$/;"	m	class:BlockNode
 variables	entity/LocalScope.java	/^    protected Map<String, DefinedVariable> variables;$/;"	f	class:LocalScope
-verbose	compiler/Options.java	/^    private boolean verbose = false;$/;"	f	class:Options	file:
+verbose	compiler/Options.java	/^    private boolean verbose = false;			\/\/ 若为 true，则表示详细模式（verbose mode）$/;"	f	class:Options	file:
 verbose	sysdep/AssemblerOptions.java	/^    public boolean verbose = false;$/;"	f	class:AssemblerOptions
 verbose	sysdep/LinkerOptions.java	/^    public boolean verbose = false;$/;"	f	class:LinkerOptions
 verbose	sysdep/x86/AssemblyCode.java	/^    final boolean verbose;$/;"	f	class:AssemblyCode
